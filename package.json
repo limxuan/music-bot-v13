@@ -1,0 +1,21 @@
+{
+    "name": "djs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@discordjs/opus": "^0.6.0",
+        "discord-player": "^5.1.0",
+        "discord.js": "^13.2.0",
+        "ffmpeg-static": "^4.4.0",
+        "glob": "^7.1.7",
+        "mongoose": "^6.0.2"
+    }
+}

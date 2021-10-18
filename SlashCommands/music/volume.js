@@ -12,7 +12,7 @@ module.exports = {
         },
     ],
     run: async (client, interaction) => {
-        const volumePercentage = interaction.options.getInteger("volume");
+        const volumePercentage = interaction.options.getInteger("percentage");
         const queue = player.getQueue(interaction.guildId);
         if (!queue?.playing)
             return interaction.followUp({

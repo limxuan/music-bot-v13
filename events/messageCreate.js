@@ -7,7 +7,7 @@ client.on("messageCreate", async (message) => {
         !message.content.toLowerCase().startsWith(client.config.prefix)
     )
         return;
-
+    if (message.content === `<@!${client.user.id}>`) message.channel.send({content: `My prefix is \`${client.config.prefix}\``})
     const [cmd, ...args] = message.content
         .slice(client.config.prefix.length)
         .trim()
